@@ -1,0 +1,92 @@
+
+.hamburger
+  height: 23px
+  width: 25px
+
+  @include tablet
+    display: none
+
+  .hamburger-box
+    height: 23px
+    width: 25px
+
+  .hamburger-inner
+    width: 25px
+
+    &:before, &:after
+      width: 25px
+  
+.nav
+  background-color: $cor-azul-escuro
+  position: absolute
+  z-index: 9
+  top: 16px
+  height: 100vh
+  width: 90%
+  z-index: 30
+  left: -100%
+
+  @include tablet
+    position: relative
+    left: auto
+    width: 100%
+    top: 0
+
+  .scrolling
+    height: 100%
+    overflow: auto
+
+  .nav-user
+    border-bottom: 1px solid #174867;
+    text-align: center
+    margin-bottom: 10px
+    padding-bottom: 16px
+    padding-top: 14px
+    position: relative
+    width: 100%
+
+    .nav-btn-close
+      background: transparent
+      position: absolute
+      top: 15px
+      right: 10px
+
+    &__avatar
+      margin-bottom: 5px
+
+    p
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+
+  .nav-links
+    display: flex
+    flex-wrap: wrap
+
+    a
+      display: inline-block
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px
+      width: 100%
+      display: flex
+      align-content: center
+      align-items: center
+      padding-left: 25px
+
+      .icon
+        margin-right: 5px
+
+        @include tablet
+          margin-right: 10px
+
+  .nav-sub
+    position: relative
+    width: 100%
+    margin-bottom: 20px
+
+    &__items
+      background-color: #174867;
+      padding: 18px 10px 1px 30px
+      width: 100%

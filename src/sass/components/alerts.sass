@@ -1,0 +1,33 @@
+.alert
+  border-radius: 4px;
+  display: flex
+  align-items: center
+  padding: 10px
+  
+  .icon
+    margin-right: 7px
+    min-width: 19px
+
+    @include tablet
+      margin-right: 18px
+      min-width: auto
+
+  p
+    color: #3a4550;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+
+    @include tablet
+      font-size: 16px;
+
+  &-gray
+    border-radius: 4px;
+    background-color: #d8d8d8;
+
+  &-text
+    &__question
+      padding-top: 10px
+      
+      p
+        margin-bottom: 10px

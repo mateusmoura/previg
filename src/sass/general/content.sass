@@ -1,0 +1,65 @@
+@import 'components/grids'
+
+%grid-b
+  padding: 0 1%
+  
+main
+  padding: 0 7%
+  margin-bottom: 20px
+
+  @include tablet
+    padding: 0
+
+  .title
+    margin-bottom: 18px
+
+  .sub-title
+    margin-bottom: 25px
+
+    .h1, .h2, .h3, .h4, .h5
+      color: #0062a1;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+  
+  .content
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px
+    padding: 20px
+    background-color: #f3f3f3
+
+
+  .wrap
+    @include tablet
+      @include grid-row
+      max-width: 1440px
+      flex-wrap: nowrap
+      margin: 0 auto
+
+      .nav 
+        @include tablet
+          @include grid-col-4
+          padding-top: 32px
+          max-width: 240px
+
+      .wrap-main
+        @include tablet
+          @include grid-col-8
+          padding: 20px
+
+          .title
+            .h1, .h2, .h3
+              font-size: 16px;
+
+          .content
+            .title
+              .h3, .h4, .h5
+                color: #e38406;
+                font-family: Lato;
+                font-size: 24px;
+                font-weight: 400;
+                text-transform: uppercase;
+
+        @include large-desktops
+          width: 100%

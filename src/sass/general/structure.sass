@@ -1,0 +1,247 @@
+@import 'variables'
+
+// RESET
+
+*
+  margin: 0
+  padding: 0
+  font-size: 100%
+  font-family: inherit
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+legend
+  display: none 
+a
+  text-decoration: none
+a:hover
+  text-decoration: underline 
+
+img, fieldset
+  border: none
+.clear
+  clear: both 
+header, nav, section, article, aside, footer, main
+  display: block 
+
+html 
+  font-family: sans-serif // 1
+  -ms-text-size-adjust: 100% // 2
+  -webkit-text-size-adjust: 100% // 2
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+
+html,
+body
+  height: 100%
+  margin: 0
+  padding: 0
+
+
+#global
+  min-height: 100%
+  position: relative
+
+
+body
+  // .background-size
+  background-color: $body-bg
+  color: $text-color
+  font-family: $font-family-base
+  font-size: $font-size-base
+  line-height: $line-height-base
+  -webkit-font-smoothing: antialiased
+  -webkit-text-stroke: 0.3px
+
+
+// Reseta as fontes para elemento relevantes
+input,
+button,
+select,
+textarea 
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+
+
+a 
+  color: $link-color
+  text-decoration: none
+
+  // &:hover,
+  // &:focus 
+  //   color: $link-hover-color
+  //   text-decoration: $link-hover-decoration
+  
+
+  &:focus 
+    //@include tab-focus
+
+
+
+iframe
+  display: block
+
+
+.hr, hr
+  border-top: solid 3px #f3d031
+  border-bottom: solid 3px #77ad4f
+  display: block
+
+
+.hr--aside
+  // .hr
+  border-top: 0
+  border-bottom: solid 1px #fff
+  margin-bottom: 25px
+
+
+// RESET >> Imagens
+
+// Resetando as margins da TAG FIGURE
+figure 
+  margin: 0
+
+
+img 
+  vertical-align: middle
+  max-width: 100%
+
+
+// Imagem responsiva
+.img-responsive 
+  // .img-responsive
+
+
+// Imagem com cantos arredondados
+.img-rounded 
+  border-radius: $border-radius-grande
+
+
+// Imagem Thumbnails
+.img-thumbnail 
+  padding: $thumbnail-padding
+  line-height: $line-height-base
+  background-color: $thumbnail-bg
+  border: 1px solid $thumbnail-border
+  border-radius: $thumbnail-border-radius
+  //@include transition(all .2s ease-in-out)
+
+  // Keep them at most 100% wide
+  // .img-responsive(inline-block)
+
+
+// Imagem em circulo.
+.img-circle 
+  border-radius: 50%
+
+
+.img-full
+  width: 100%
+
+
+.img-border
+  border: solid 2px #fff
+  -webkit-box-shadow: 0 2px 3px rgba(2,4,0,.3)
+  -moz-box-shadow: 0 2px 3px rgba(2,4,0,.3)
+  box-shadow: 0 2px 3px rgba(2,4,0,.3)
+
+
+// .img-center
+
+
+
+// Cor de seleção do texto
+// .selectionCustom(#E6CDCA)
+
+// OVERLAY >> Usado para AJAX e outras funcionalidades
+
+#overlay
+  background: url('#{$bkg}/overlay_white.png')
+  display: none
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 900
+
+
+// LOADING >> Usado para AJAX e outras funcionalidades
+
+#loading
+  // .border-radius(10px)
+  background: url('#{bkg}/loading_32x32.gif') no-repeat center
+  background-color: #fff
+  display: none
+  height: 60px
+  left: 50%
+  margin: -30px 0 0 -30px
+  padding: 12px
+  position: fixed
+  top: 50%
+  width: 60px
+  z-index: 1100
+
+
+.mobile
+  @include tablet
+    display: none !important
+
+.desktop
+  display: none !important;
+
+  @include tablet
+    display: block !important
+
+// ALINHAMENTO >> De acordo com o padding dos elementos deverá diminuir a largura do site. Por causa das GRIDS
+
+// .center 
+//   // .conteudo-fixo()
+
+//   @media (min-width: $resolucao-p-min) 
+//     width: @conteudo-tablet
+  
+//   @media (min-width: $resolucao-m-min) 
+//     width: @conteudo-desktop
+  
+//   @media (min-width: @resolucao-g-min) 
+//     width: @conteudo-desktop-grande
+  
+  
+//   // .centerContent(auto)
+  
+//   // @media (min-width: @resolucao-p-min)
+//   // 	width: @resolucao-p-min
+//   // 
+
+//   // @media (min-width: @resolucao-m-min)
+//   // 	width: @resolucao-m-min
+//   // 
+
+//   // @media (min-width: @resolucao-g-min)
+//   // 	width: @resolucao-g-min
+//   // 
+
+
+// .center--small
+//   .center
+
+
+//   @media (min-width: @resolucao-p-min) 
+//     max-width: 660px
+  
+//   @media (min-width: @resolucao-m-min) 
+//     max-width: 660px
+  
+//   @media (min-width: @resolucao-g-min) 
+//     max-width: 660px
+  

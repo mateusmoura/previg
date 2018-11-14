@@ -1,0 +1,41 @@
+.btn
+  color: #fff
+  background-color: transparent
+  background-image: none;
+  border: solid 2px transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  font-family: $font-family-sans-serif-2;
+  margin-bottom: 0;
+  text-align: center;
+  touch-action: manipulation;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  max-width: 100%;
+  padding: 10px
+
+  @include tablet
+    font-size: 16px;
+
+  &-primary
+    border-radius: 8px;
+    background-color: #e38406;
+    font-size: 14px;
+
+  &-secondary
+    border-radius: 3px;
+    border: 1px solid #076198;
+    background-image: linear-gradient(135deg, #205e85 0%, #174867 100%);
+
+  &-link
+    color: #3f7d8f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline
+
+    &:hover, &:focus
+      text-decoration: none

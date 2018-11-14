@@ -1,0 +1,72 @@
+.container-fluid,
+.row
+  @include grid-row
+
+  &.center
+    align-items: center
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+  @include grid-padding
+
+.col-
+  &1
+    @include grid-col-1
+  &2
+    @include grid-col-2
+  &3
+    @include grid-col-3
+  &4
+    @include grid-col-4
+  &5
+    @include grid-col-5
+  &6
+    @include grid-col-6
+  &7
+    @include grid-col-7
+  &8
+    @include grid-col-8
+  &9
+    @include grid-col-9
+  &10
+    @include grid-col-10
+  &11
+    @include grid-col-11
+  &12
+    @include grid-col-12
+
+.col-md-1
+  @include tablet
+    @include grid-col-1
+.col-md-2
+  @include tablet
+    @include grid-col-2
+.col-md-3
+  @include tablet
+    @include grid-col-3
+.col-md-4
+  @include tablet
+    @include grid-col-4
+.col-md-5
+  @include tablet
+    @include grid-col-5
+.col-md-6
+  @include tablet
+    @include grid-col-6
+.col-md-7
+  @include tablet
+    @include grid-col-7
+.col-md-8
+  @include tablet
+    @include grid-col-8
+.col-md-9
+  @include tablet
+    @include grid-col-9
+.col-md-10
+  @include tablet
+    @include grid-col-10
+.col-md-11
+  @include tablet
+    @include grid-col-11
+.col-md-12
+  @include tablet
+    @include grid-col-12

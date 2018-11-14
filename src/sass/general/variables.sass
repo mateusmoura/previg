@@ -1,0 +1,335 @@
+// VARIÁVEIS - Váriaveis globais para as CORES
+
+// Preto vai ser a cor padrão do Guia de Estilo, mas pode ser alterado ou criar novas variaveis.
+
+$cinza-base: #000;
+$cinza-darker: lighten($cinza-base, 13.5%); // #222
+$cinza-dark: lighten($cinza-base, 20%);   // #333
+$cinza: lighten($cinza-base, 33.5%); // #555
+$cinza-light: lighten($cinza-base, 46.7%); // #777
+$cinza-lighter: lighten($cinza-base, 93.5%); // #eee
+
+$cor-primaria: darken(#428bca, 6.5%);
+$cor-sucesso: #5cb85c;
+$cor-info: #47bbea;
+$cor-alerta: #d59233;
+$cor-erro: #ba3925;
+
+// Cor do background da `<body>`.
+$body-bg: #fff;
+// Cor geral da `<body>`.
+$text-color: $cinza-dark;
+$text-color-2: #3A4550;
+
+// Cor geral dos links.
+$link-color: $text-color;
+// Cor do hover dos links.
+$link-hover-color: #ebebeb;
+// Link hover decoration.
+$link-hover-decoration: none;
+
+
+// Cores definidas no Layout do Guia de Estilo
+
+$cor-branco: #fff;
+
+$cor-verde-escuro: #005725;
+$cor-verde: #437642;
+$cor-verde-claro: #77ad4f;
+$cor-verde-escuro2: #1ea69c;
+
+$cor-marron-escuro: #7d7369;
+$cor-marron: #7d512b;
+$cor-marron-claro: #f9f9f1;
+
+$cor-cinza: lighten($cinza-base, 40%); // #666666
+$cor-cinza-claro: lighten($cinza-base, 80%); // #cccccc
+
+$cor-azul: #0062A1;
+$cor-azul-escuro: #205E85;
+$cor-azul-escuro-2: #174867;
+$cor-azul-claro: #358ED7;
+
+
+$cor-roxa: #6a154a;
+$cor-amarela: #cac439;
+$cor-vermelha: #ba3925;
+$cor-rosa: #b80d8c;
+$cor-amareloQueimado: #bb742a;
+$cor-laranja: #f7931e;
+$cor-beje: #c4bcb0;
+
+// CAMINHOS OBS: 
+
+$bkg: "../images/bkg/";
+$fke: "../images/fke/";
+$ico: "../images/icons/";
+$lgo: "../images/lgo/";
+
+// VARIÁVEIS >>> Componentes
+
+// Tamanho do paddings do site
+$padding-base-vertical: 6px;
+$padding-base-horizontal: 12px;
+
+$padding-grande-vertical: 10px;
+$padding-grande-horizontal: 16px;
+
+$padding-pequeno-vertical: 5px;
+$padding-pequeno-horizontal: 10px;
+
+$padding-xpequeno-vertical: 1px;
+$padding-xpequeno-horizontal: 5px;
+
+// Tamanho do line-height dos elementos
+$line-height-grande: 1.33;
+$line-height-pequeno: 1.5;
+
+// Variação do Border radius do projeto
+$border-radius-base: 4px;
+$border-radius-grande: 6px;
+$border-radius-pequeno: 3px;
+
+// CURSOR DESATIVADO
+$curso-desativado: not-allowed;
+
+// VARIÁVEIS >>> Váriaveis globais para Tipografia
+
+// Definição das fontes, tamanho da fonte, line-height.
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-sans-serif-2: 'Lato', sans-serif;
+$font-family-cursive: 'Amatic SC', cursive;
+// Padrão das fontes monospace para `<code>`, `<kbd>`, e `<pre>`.
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 12px;
+$font-size-grande: ceil(($font-size-base * 1.25)); // ~18px
+$font-size-pequeno: ceil(($font-size-base * 0.85)); // ~12px
+
+$font-size-h1: floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4: $font-size-grande; // ~18px
+$font-size-h5: $font-size-base;
+$font-size-h6: $font-size-pequeno; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
+
+// Reseta os elementos do sites: font-family, font-weight, line-height e color.
+$reset-font-family: inherit;
+$reset-font-weight: 500;
+$reset-line-height: 1.1;
+$reset-color: inherit;
+
+// VARIÁVEIS >>> Váriaveis globais para as GRIDS
+
+// Define a quantidade de colunas que será gerada.
+$grid-colunas:  12;
+
+// Espaçamento entre as colunas
+$grid-separacao: 10px;
+$grid-separacao-2: 20px;
+$grid-separacao-3: 30px;
+$grid-separacao-4: 40px;
+// Definição dos breakpoints.
+// Por Padrão é 4 se for alterar deve criar a largura dos outros breakpoints a mais.
+$breakpoints: 4;
+// Definição das larguras dos Breakpoints
+// Tablets
+$conteudo-tablet: (720px + $grid-separacao);
+$resolucao-max: $conteudo-tablet;
+$resolucao-p-min: $conteudo-tablet;
+// Desktops
+$conteudo-desktop: (940px + $grid-separacao);
+$resolucao-p-max: $conteudo-desktop;
+$resolucao-m-min: $conteudo-desktop;
+// Desktops com Monitores grandes
+$conteudo-desktop-grande: (1180px + $grid-separacao);
+$resolucao-m-max: $conteudo-desktop-grande;
+$resolucao-g-min: $conteudo-desktop-grande;
+
+// Classes das Colunas
+// Celular
+$classes-celular: '.col-', '.col-p-', '.col-m-', '.col-g-';
+// Tablet
+$classes-tablet: '.col-es-', '.col-p-es-', '.col-m-es-', '.col-g-es-';
+// Desktop
+$classes-desktop: '.col-emp-', '.col-p-emp-', '.col-m-emp-', '.col-g-emp-';
+// Desktop Grandes
+$classes-desktop-Grande: '.col-pux-', '.col-p-pux-', '.col-m-pux-', '.col-g-pux-';
+
+// VARIÁVEIS >>> Váriaveis globais para os FORMULÁRIOS
+
+/* INPUTS */
+// Background-color dos inputs
+$input-bg: #ededee;
+$input-bg-desativado: $cinza-lighter;
+
+// Tamanho font no Intpu
+$font-size-input: $font-size-base;
+
+// Cor do Input
+$input-color: $cinza;
+// Cor da borda do Input
+$input-border: #ededee;
+// Tamanho das Border radius do Input
+$input-border-radius: 4px;
+$input-border-radius-grande: $border-radius-grande;
+$input-border-radius-pequeno: $border-radius-pequeno;
+
+
+// Border color no Focus
+$input-border-focus: #7B3E3C;  //#1cb3e8;
+// Cor do texto no placeholder
+$input-color-placeholder: #c2cacc;
+
+// Tamanho do input
+$input-height-base: ( $line-height-computed + ( $padding-base-vertical * 2 ) + 10 );
+$input-height-grande: ( ceil( $font-size-grande * $line-height-grande ) + ( $padding-grande-vertical * 2 ) + 10 );
+$input-height-pequeno: ( floor( $font-size-pequeno * $line-height-pequeno ) + ( $padding-pequeno-vertical * 2 ) + 10 );
+
+// VARIÁVEIS >>> Váriaveis globais para os SELECTS
+
+// Background-color dos selects
+$select-bg: #fff;
+$select-bg-desativado: $cinza-light;
+
+// Cor da borda do Input
+$select-border: $cinza-dark;
+
+// Border color no Focus
+$select-border-focus: #1cb3e8;
+
+// Ativa ou desativa o Border radius EX: true ou false;
+$border-radius-input: false;
+// Ativa a animação ou não no Focus
+$animate-focus-input: true;
+// Ativa ou desativa o Shadow no Input EX: true ou false;
+$shadow-input: false;
+
+
+// VARIÁVEIS >>> Váriaveis globais para as LABELS
+
+//** Background padrão das labels
+$label-default-bg: $cinza-light;
+//** Cor da label primaira
+$label-primary-bg: $cor-primaria;
+//** Cor da label de sucesso
+$label-success-bg: $cor-sucesso;
+//** Cor da label de informações
+$label-info-bg: $cor-info;
+//** Cor da label alerta
+$label-warning-bg: $cor-alerta;
+//** Cor da label erro
+$label-danger-bg: $cor-erro;
+
+//** Cor do texto padrão para as Labels
+$label-color: #666666;
+//** Cor padrão para as Labels com link
+$label-link-hover-color: $cinza-light;
+
+
+// VARIÁVEIS >>> Váriaveis globais para as THUMBNAILS
+
+//** Padding ao redor da imagem thumbnail
+$thumbnail-padding: 4px;
+//** Cor do background das thumbnails
+$thumbnail-bg: $body-bg;
+//** Cor da Borda das thumbnails
+$thumbnail-border: #ddd;
+//** Borda arredondada nas Thumbnails
+$thumbnail-border-radius: $border-radius-base;
+
+//** Custom text color for thumbnail captions
+$thumbnail-caption-color: $text-color;
+//** Padding around the thumbnail caption
+$thumbnail-caption-padding: 9px;
+
+// VARIÁVEIS >>> Váriaveis globais para os BOTÕES
+
+$btn-font-weight: bold;
+$btn-font-size: 18px;
+
+$btn-padding-vertical: 12px;
+$btn-padding-horizontal: 34px;
+
+$btn-default-color: #fff;
+$btn-default-bg: #333;
+$btn-default-border: none; //#94d400;
+$btn-default-hover: #333;
+$btn-default-hover-bg: #ebebeb;
+
+$btn-white-color: #333;
+$btn-white-bg: #fff;
+$btn-white-border: #333; //#94d400;
+$btn-white-hover: #fff;
+$btn-white-hover-bg: #333;
+
+$btn-primaria-color: #fff;
+$btn-primaria-bg: $cor-primaria;
+$btn-primaria-border: darken($btn-primaria-bg, 5%);
+
+$btn-sucesso-color: #fff;
+$btn-sucesso-bg: #77ad4f;
+$btn-sucesso-border: none; //darken($btn-sucesso-bg, 5%);
+$btn-sucesso-hover: #437642;
+
+$btn-info-color: #fff;
+$btn-info-bg: $cor-info;
+$btn-info-border: darken($btn-info-bg, 5%);
+
+$btn-alerta-color: #fff;
+$btn-alerta-bg: $cor-alerta;
+$btn-alerta-border: darken($btn-alerta-bg, 5%);
+
+$btn-erro-color: #fff;
+$btn-erro-bg: $cor-erro;
+$btn-erro-border: darken($btn-erro-bg, 5%);
+
+$btn-back-color: $cor-verde;
+$btn-back-bg: transparent;
+$btn-back-border: $cor-verde;
+
+$btn-link-disabled-color: $cinza-lighter;
+// Colocar sombra no texto e no botão
+$shadow-button: true;
+// Habilitar/Desabilitar border radius no botão
+$allowed-border-radius: false;
+
+// VARIÁVEIS >>> Váriaveis globais para a PAGINAÇÃO
+
+$paginacao-color: #fff;
+$paginacao-bg: #44783c;
+$paginacao-border: #fff;
+
+$paginacao-hover-color: #fff;
+$paginacao-hover-bg: #916633;
+$paginacao-hover-border: #fff;
+
+$paginacao-active-color: #fff;
+$paginacao-active-bg: #916633;
+$paginacao-active-border: #fff;
+
+$paginacao-disabled-color: $cinza-light;
+$paginacao-disabled-bg: #fff;
+$paginacao-disabled-border: #ddd;
+
+// VARIÁVEIS >>> Váriaveis globais para a NAVEGAÇÃO POR PÁGINA
+
+$nav-pagina-bg: #f9f9f1; //$paginacao-bg;
+$nav-pagina-border: #e2e2d6; //$paginacao-border;
+
+$nav-pagina-border-radius: 5px;
+
+$nav-pagina-hover-bg: #e2e2d6;  //$paginacao-hover-bg;
+$nav-pagina-hover-border: #b3aaa1;
+$nav-pagina-hover-color: #7d7369;
+
+$nav-pagina-active-bg: $paginacao-active-bg;
+$nav-pagina-active-color: $paginacao-active-color;
+
+$nav-pagina-disabled-color: $paginacao-disabled-color;

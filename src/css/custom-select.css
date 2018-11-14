@@ -1,0 +1,74 @@
+/* CUSTOM SELECT
+________________ */
+
+div.customSelect {
+  margin-bottom:5px;
+  padding-left:0 !important;
+  position:relative;
+  width:100%;
+  z-index:25;
+}
+div.customSelect .dropdown {
+  background: url("../images/icons/icon-select__arrow.png") no-repeat right top;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  display:block;
+  margin: 0;
+  text-decoration:none;
+  z-index:3;
+}
+div.customSelect.loading .dropdown {
+  background:#fff url("../img/gr/gr_ajax_loading.gif") 6px center no-repeat;
+}
+div.customSelect .dropdown span {
+  display:block;
+  overflow:hidden;
+  width:100%;
+}
+div.customSelect .dropdown span span {
+  color:#686868;
+  width:1000px;
+}
+div.activeDropdown .dropdown {
+  /*border-bottom:2px solid transparent;*/
+}
+div.customSelect ul {
+  border-top: none;
+  left:0px;
+  height: 200px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 100%;
+  max-width: 100%;
+  z-index: 20;
+}
+div.customSelect[class] ul{
+  height:auto;
+  max-height:200px;
+}
+div.customSelect li {
+  background:#e6e6e6;
+  clear:both;
+  display:block !important;
+  float:none !important;
+  list-style:none;
+  width:auto;
+}
+div.customSelect li a {
+  display:block;
+  text-decoration:none;
+}
+div.customSelect li a span{
+  font-weight:normal;
+}
+div.customSelect li span.index {
+  display:none;
+}
+div.customSelect li a:hover
+, div.customSelect li a:hover span {
+  background:white;
+  color:#686868;
+}

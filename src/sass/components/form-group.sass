@@ -1,0 +1,191 @@
+.form-group
+  margin-bottom: 15px 
+
+  @include tablet
+    margin-bottom: 30px
+
+  label
+    color: $cor-azul-claro
+    font-weight: bold
+    margin-bottom: 10px
+    display: inline-block
+
+    @include tablet
+      font-size: 14px;
+
+  p
+    color: $text-color-2
+    font-size: 18px
+
+    @include tablet
+      font-size: 24px;
+
+
+.field-text
+  border: 0
+  background-color: transparent
+  border-bottom: 1px solid #979797;
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%
+
+  @include tablet
+    font-size: 24px;
+    padding: 1px 5px
+
+.field-radio
+  display: flex
+  align-items: center
+
+  @include tablet
+    font-size: 15px;
+
+  input
+    margin-right: 5px
+
+    @include tablet
+      margin-right: 10px
+
+.field-slider
+  margin-bottom: 15px
+
+  label
+    color: $cor-azul-claro
+    font-weight: bold
+
+    @include tablet
+     font-size: 14px;
+
+  .field-slider__display
+    color: #3a4550;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%
+    text-align: center
+
+  .irs
+    height: 40px
+    position: relative
+    padding-bottom: 20px
+
+    @include tablet
+      height: 48px
+
+  .irs-line
+    border-radius: 4px;
+    height: 10px
+    left: 4px
+    right: 4px
+    top: 10px
+    background-color: #d8d8d8;
+    width: 99%
+
+  .irs-min, .irs-max
+    color: #358ed7;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    background-color: transparent
+    position: absolute
+    bottom: 0
+    top: auto
+    visibility: visible !important
+
+    @include tablet
+      font-size: 12px
+
+  .irs-min
+    left: 0
+
+  .irs-max
+    right: 0
+
+  .irs-bar
+    border-radius: 4px;
+    background-color: #e38406;
+    height: 10px
+    top: 10px
+
+  .irs-single
+    border-radius: 50%
+    width: 20px;
+    height: 20px;
+    background-color: #e38406;
+    overflow: hidden
+    text-indent: -999em
+    position: absolute
+    top: 4px
+
+.field-select
+  .customSelect
+    border-bottom: 1px solid #979797;
+    padding-bottom: 2px
+
+    .dropdown
+      background-position: 100% 5px
+
+      @include tablet
+        font-size: 24px;
+        background-position: 100% 10px
+
+      span span
+        color: #3a4550;
+
+    ul
+      background-color: tranparent
+      width: 100%
+      border-radius: 3px
+      position: absolute
+      padding-top: 8px
+
+      &:before
+        content: ' '
+        width: 10px
+        background-color: #fff
+        height: 10px
+        position: absolute
+        transform: rotate(45deg);
+        top: 3px
+        left: 50%
+        margin-left: -5px
+        border: solid 1px #ababab;
+        border-bottom: 0
+        border-right: 0
+        z-index: 3
+
+      li 
+        background-color: #fff
+        z-index: 2
+        position: relative
+        border: solid 1px #ababab
+        border-top: 0;
+        border-bottom: 0
+
+        &:first-child
+          border-top: solid 1px #ababab
+          border-radius: 3px 3px 0 0
+
+          &:hover, &:focus
+            z-index: 4
+
+        &:last-child
+          border-bottom: solid 1px #ababab
+          border-radius: 0 0 3px 3px
+
+        a
+          color: #212b36;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 10px 0 10px 10px
+
+          &:hover, &:focus
+            background-color: #0062a1;
+            color: #ffffff;
+
+            span
+              background-color: #0062a1;
+              color: #ffffff;
