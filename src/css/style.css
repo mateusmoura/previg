@@ -377,8 +377,27 @@ main {
   }
 }
 
+main .content-title .h1, main .content-title h1, main .content-title .h2, main .content-title h2, main .content-title .h3, main .content-title h3, main .content-title .h4, main .content-title h4 {
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+main .content-title__sub p, main .content-title__sub span {
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 main .title {
   margin-bottom: 18px;
+}
+
+main .title .h1, main .title .h2, main .title .h3, main .title .h4, main .title .h5, main .title .h6 {
+  color: #e38406;
 }
 
 main .sub-title {
@@ -625,6 +644,12 @@ main .content {
   height: 25px;
 }
 
+.icon-arrow__left--blue {
+  background-image: url("../images/icons/icon-arrow__left--blue.png");
+  width: 32px;
+  height: 25px;
+}
+
 .icon-info {
   background-image: url("../images/icons/icon-info.png");
   width: 19px;
@@ -773,6 +798,53 @@ main .content {
   }
 }
 
+.table, table {
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table thead th, table thead th {
+  padding: 15px;
+  color: #212b36;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table tbody tr, table tbody tr {
+  background-color: #ffffff;
+  border-bottom: solid 1px #dfe3e8;
+}
+
+.table tbody tr td, table tbody tr td {
+  color: #007ace;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px;
+}
+
+.table.table-blue thead, table.table-blue thead {
+  background-color: #358ed7;
+}
+
+.table.table-blue thead th, table.table-blue thead th {
+  color: #ffffff;
+}
+
+.table.table-blue tbody tr.table-subhead, table.table-blue tbody tr.table-subhead {
+  background-color: #0062a1;
+}
+
+.table.table-blue tbody tr.table-subhead td, table.table-blue tbody tr.table-subhead td {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .alert {
   border-radius: 4px;
   display: flex;
@@ -868,8 +940,11 @@ main .content {
   text-decoration: none;
 }
 
+.btn-icon {
+  padding: 2px;
+}
+
 .h1, .h2, .h3, .h4, .h5 {
-  color: #e38406;
   font-family: Lato;
   font-weight: 400;
   text-transform: uppercase;
@@ -941,6 +1016,7 @@ main .content {
 .form-group p {
   color: #3A4550;
   font-size: 18px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -1206,6 +1282,24 @@ main .content {
   .emprestimos .resumo {
     margin-bottom: 30px;
   }
+}
+
+.emprestimos .extrato .h3 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .emprestimos .extrato .h3 {
+    font-size: 24px;
+  }
+}
+
+.emprestimos .extrato .btn-back {
+  margin-bottom: 15px;
+}
+
+.emprestimos .extrato .content-title {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
