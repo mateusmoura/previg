@@ -43,6 +43,7 @@ var site = {
     MM.CustomSelect();
 
     this.menu();
+    this.modal();
   },
   /* Menu */
   menu: function () {
@@ -75,14 +76,24 @@ var site = {
       animation = false;
     })
   },
-  /*
-  * Callback quando salva um evento na modal.
-  */
-  registerEvent: function () {
-    console.log('Callback modal');
+  
+  modal: function() {
+    const overlay = $('.modal-overlay');
+
+    $('.btn-modal').click(function() {
+      const target = $(this).data('target');
+
+      overlay.toggleClass('active');
+      $(target).toggleClass('active');
+    });
+
+    overlay.add($('.btn-close-modal')).click(function() {
+      overlay.removeClass('active');
+
+      $('.modal').removeClass('active');
+    });
   }
 }
-
 
 $( function(){
   site.global();

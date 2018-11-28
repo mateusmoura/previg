@@ -11,6 +11,9 @@
     @include tablet
       margin-right: 18px
       min-width: auto
+      font-size: 18px
+      width: 40px
+      max-width: 40px
 
   p
     color: #3a4550;
@@ -24,6 +27,11 @@
   &-gray
     border-radius: 4px;
     background-color: #d8d8d8;
+
+    .icon-info
+      @include tablet
+        width: 40px
+        align-self: flex-start
 
   &-text
     &__question

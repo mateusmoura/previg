@@ -1,0 +1,68 @@
+
+
+.modal-overlay
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  display: none
+  z-index: 90
+  background-color: rgba(74, 74, 74, 0.3);
+
+  &.active
+    display: block
+
+.modal
+  background-color: #fff
+  position: absolute
+  border-radius: 8px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 91
+  padding: 25px
+  left: 5%
+  top: 50%
+  width: 90%
+  display: none
+  @include transform(translateY(-50%))
+
+  &.active
+    display: block
+
+  @include tablet
+    top: 50%
+    left: 50%
+    max-width: 570px
+    @include transform(translate(-50%, -50%))
+
+
+  .modal-small
+    @include tablet
+      max-width: 420px
+
+  .modal-big
+    @include tablet
+      max-width: 700px
+
+  .modal-head
+    margin-bottom: 15px
+
+  .modal-content
+    margin-bottom: 25px
+
+    p
+      color: #0062a1;
+      font-family: Lato;
+      font-size: 25px;
+      font-weight: 400;
+
+  .modal-footer
+    .btn
+      margin-top: 20px
+
+      &:first-child
+        margin-top: 0
+
+
+.modal-solicitar
+  
