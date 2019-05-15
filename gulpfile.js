@@ -6,7 +6,7 @@ const fileinclude = require('gulp-file-include');
 const eslint = require('gulp-eslint');
 const sourcemaps = require('gulp-sourcemaps');
 const util = require('gulp-util');
-const gih = require("gulp-include-html");
+const gih = require('gulp-include-html');
 
 const config = {
   srcDir: 'src/',

@@ -41,6 +41,7 @@ var site = {
   global: function(){
     MM.InputRange($('.field-slider'));
     MM.CustomSelect();
+    MM.Mascarar();
 
     this.menu();
     this.modal();

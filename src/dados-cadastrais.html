@@ -20,7 +20,7 @@
     <link href="../img/favicon.png" rel="shortcut icon">
   </head>
 
-<body class="emprestimos">
+<body class="cadastro">
   <!-- HEADER -->
   <header>
     <div class="row container-fluid mobile">
@@ -138,144 +138,182 @@
 
       <div class="center wrap-main">
         <div class="title">
-          <h2 class="h2">Solicitar Empréstimo</h2>
+          <h2 class="h2">Dados cadastrais</h2>
         </div>
     
         <div class="content">
-          <div class="resumo">
-            <div class="row">
-              <div class="col-12">
-                <div class="sub-title">
-                  <h3 class="h3">Resumo da solicitação de empréstimo</h3>
-                </div>
-              </div>
-            </div>
-
+          <div class="cadastro">
             <div class="container-fluid hero">
-              <div class="col-6 col-md-3">
+              <div class="col-5">
                 <div class="form-group">
-                  <label>Valor líquido a receber</label>
-                  <p>R$ 1.000,00</p>
+                  <label>NOME</label>
+                  <p>Miroslav Klose da Silva</p>
                 </div>
               </div>
       
-              <div class="col-6 col-md-3">
+              <div class="col-5 col-offset-2">
                 <div class="form-group">
-                  <label>Valor do contrato</label>
-                  <p>R$ 5.899,24</p>
+                  <label>SEXO</label>
+                  <p>Masculino</p>
                 </div>
               </div>
   
-              <div class="col-6 col-md-3">
+              <div class="col-5">
                 <div class="form-group">
-                  <label>Quantidade de parcelas</label>
-                  <p>6 parcelas</p>
+                  <label>DATA DE nascimento</label>
+                  <p>16/12/1985</p>
                 </div>
               </div>
 
-              <div class="col-6 col-md-3">
+              <div class="col-5 col-offset-2">
                 <div class="form-group">
-                  <label>Valor de parcela</label>
-                  <p>R$ 5.899,24</p>
+                  <label>CPF</label>
+                  <p>999.999.999-99</p>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="container-fluid hero">
-            <div class="col-12 col-md-3">
-              <div class="form-group">
-                <label>Banco</label>
-                
-                <div class="field-select">
-                  <select class="select-custom">
-                    <option>Banco do Brasil</option>
-                    <option>Banco Inter</option>
-                    <option>Nubank</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-3">
-              <div class="form-group">
-                <label>Agência</label>
-                <input type="text" class="field-text" value="0000-0" />
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="form-group">
-                <label>Conta corrente</label>
-                <input type="text" class="field-text" value="00000000000000-0" />
-              </div>
-            </div>
-    
-            <div class="col-12">
-              <div class="alert alert-gray">
-                <i class="icon icon-info align-top"></i>
-                <div class="alert-text">
-                  <p>Os dados bancários, indicados para crédito de valor líquido, deverão ser de sua titularidade e não poderão ser de conta do tipo Salário.</p>
+              <div class="col-5">
+                <div class="form-group">
+                  <label>Estado Civil</label>
                   
-                  <div class="alert-text__question">
-                    <div class="row align-items-center">
-                      <div class="col-12 col-md-6">
-                        <p>Você confirma que esta conta não é do tipo Salário?</p>
-                      </div>
-
-                      <div class="col-12 col-md-6">
-                        <div class="row">
-                          <div class="col-6">
-                            <label class="field-radio"> 
-                              <input type="radio" name="resp1" checked />
-                              Sim
-                            </label>
-                          </div>
-    
-                          <div class="col-6">
-                            <label class="field-radio">
-                              <input type="radio" name="resp1" />
-                              Não
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="field-select">
+                    <select class="select-custom">
+                      <option>Solteiro</option>
+                      <option>Casado</option>
+                      <option>Divorciado</option>
+                    </select>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-12 col-md-6">
-              <a href="#this" class="btn btn-link btn-back">Quero refazer a simulação</a>
-            </div>
-    
-            <div class="col-12 col-md-6">
-              <button type="button" class="btn btn-primary btn-modal" data-target="#modal001">Confirmar empréstimo</button>
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Nome da mãe</label>
+                  <p>Maria Klose da Paula</p>
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>Nome do pai</label>
+                  <p>João Klose da Paula</p>
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Tipo do Logradouro</label>
+                  
+                  <div class="field-select">
+                    <select class="select-custom">
+                      <option>Rua</option>
+                      <option>Condomínio</option>
+                      <option>Casa</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Endereço</label>
+                  <input type="text" class="field-text" value="Dom Jaime Câmara" />
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>Número</label>
+                  <input type="number" class="field-text" value="229" />
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Complemento</label>
+                  <input type="text" class="field-text" value="1º Andar - Ed. Frei Junípero" />
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>Bairro</label>
+                  <input type="text" class="field-text" value="Centro" />
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Cep</label>
+                  <input type="text" class="field-text mask-cep" value="88015-120" />
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>Cidade</label>
+                  <input type="text" class="field-text" value="Florianopolis" />
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Estado</label>
+                  <input type="text" class="field-text" value="Santa Catarina" />
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>País</label>
+                  <input type="text" class="field-text" value="Brasil" />
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>E-mail principal</label>
+                  <input type="text" class="field-text" value="miroslav@previg.org.br" />
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>E-mail secundário</label>
+                  <input type="text" class="field-text" value="miroslav@previg.org.br" />
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Telefone celular</label>
+                  <input type="text" class="field-text mask-phone" value="(48) 99999-9999" />
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="form-group">
+                  <label>Telefone Residencial</label>
+                  <input type="text" class="field-text mask-phone" value="(48) 99999-9999" />
+                </div>
+              </div>
+
+              <div class="col-5 col-offset-2">
+                <div class="form-group">
+                  <label>Telefone Comercial</label>
+                  <input type="text" class="field-text mask-phone" value="(48) 99999-9999" />
+                </div>
+              </div>
+
+              <div class="col-12 block-actions">
+                <button type="button" class="btn btn-primary btn-center" data-target="#modal001">Salvar Atualização</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-  <div class="modal-overlay animated fadeIn"></div>
-
-  <div class="modal animated fadeIn" id="modal001">
-    <div class="modal-head">
-
-    </div>
-
-    <div class="modal-content">
-      <div class="modal-solicitar align-center">
-        <p>Para a solicitação deste empréstimo, será necessário a impressão e as assinaturas do Participante e testemunhas. Este documento deverá ser entregue na Previg até o dia 31/10/2018.</p>
-      </div>
-    </div>
-
-    <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Imprimir o contrato</button>
-    </div>
-  </div>
 
   <!-- JAVASCRIPTS -->
   <script>
@@ -288,9 +326,10 @@
 
   <script src="js/Modulos/MM.InputRange.js"></script>
   <script src="js/Modulos/MM.CustomSelect.js"></script>
-  
   <script src="js/Modulos/MM.Mascarar.js"></script>
-  <!-- <script src="js/Modulos/MM.Mensagem.js"></script>
+  
+  <!-- 
+  <script src="js/Modulos/MM.Mensagem.js"></script>
   <script src="js/Modulos/MM.Modal.js"></script>
   <script src="js/Modulos/MM.VerificarNavegador.js"></script>
   <script src="js/Modulos/MM.ValidarFormularios.js"></script>
