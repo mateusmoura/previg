@@ -343,6 +343,10 @@ header .block-user__data p, .header .block-user__data p {
   margin-left: 100%;
 }
 
+.col-offset-none {
+  margin-left: 0;
+}
+
 @media (min-width: 768px) {
   .col-md-1 {
     width: 8.3%;
@@ -412,6 +416,84 @@ header .block-user__data p, .header .block-user__data p {
 @media (min-width: 768px) {
   .col-md-12 {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-1 {
+    margin-left: 8.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-2 {
+    margin-left: 16.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-4 {
+    margin-left: 33.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-5 {
+    margin-left: 41.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-7 {
+    margin-left: 58.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-8 {
+    margin-left: 66.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-10 {
+    margin-left: 83.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-11 {
+    margin-left: 91.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-node {
+    margin-left: 0;
   }
 }
 
@@ -508,6 +590,22 @@ main .content {
   main .wrap .wrap-main {
     width: 100%;
   }
+}
+
+.form-code {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-code div {
+  padding: 0 10px;
+  width: 16.5%;
+  text-align: center;
+}
+
+.form-code div input {
+  text-align: center;
 }
 
 .hamburger {
@@ -825,6 +923,10 @@ main .content {
   margin-left: 100%;
 }
 
+.col-offset-none {
+  margin-left: 0;
+}
+
 @media (min-width: 768px) {
   .col-md-1 {
     width: 8.3%;
@@ -894,6 +996,84 @@ main .content {
 @media (min-width: 768px) {
   .col-md-12 {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-1 {
+    margin-left: 8.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-2 {
+    margin-left: 16.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-4 {
+    margin-left: 33.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-5 {
+    margin-left: 41.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-7 {
+    margin-left: 58.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-8 {
+    margin-left: 66.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-10 {
+    margin-left: 83.3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-11 {
+    margin-left: 91.6%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-offset-node {
+    margin-left: 0;
   }
 }
 
@@ -978,6 +1158,15 @@ main .content {
 
 .modal .modal-footer .btn:first-child {
   margin-top: 0;
+}
+
+.modal-info {
+  margin-bottom: 20px;
+}
+
+.modal-info span, .modal-info p {
+  font-size: 16px;
+  color: #3A4550;
 }
 
 .table, table {

@@ -306,7 +306,7 @@
               </div>
 
               <div class="col-12 block-actions">
-                <button type="button" class="btn btn-primary btn-center" data-target="#modal001">Salvar Atualização</button>
+                <button type="button" class="btn btn-primary btn-modal" data-target="#modal001">Salvar Atualização</button>
               </div>
             </div>
           </div>
@@ -314,6 +314,91 @@
       </div>
     </div>
   </main>
+
+  <div class="modal-overlay animated fadeIn"></div>
+
+  <div class="modal animated fadeIn" id="modal001">
+    <div class="modal-head">
+
+    </div>
+
+    <div class="modal-content">
+      <div class="modal-solicitar align-center">
+        <p>Para confirmar, enviaremos um código de verificação. Deseja receber o código via:</p>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary btn-modal" data-target="#modal002">SMS: (48) *****-2561</button>
+
+      <button type="button" class="btn btn-primary btn-modal" data-target="#modal002">E-mail: miros*****@gmail.com</button>
+    </div>
+  </div>
+
+  <div class="modal animated fadeIn" id="modal002">
+    <div class="modal-head">
+
+    </div>
+
+    <div class="modal-content">
+      <div class="modal-info align-center">
+        <span>Para confirmar a alteração, insira o código do SMS enviado para o seu celular cadastrado.</span>
+      </div>
+
+      <div class="modal-form">
+        <div class="form-code">
+          <div>
+            <input type="text" class="field-text" maxlength="1" value="1" />
+          </div>
+
+          <div>
+            <input type="text" class="field-text" maxlength="1" value="2" />
+          </div>
+
+          <div>
+            <input type="text" class="field-text" maxlength="1" value="3" />
+          </div>
+
+          <div>
+            <input type="text" class="field-text" maxlength="1" value="4" />
+          </div>
+
+          <div>
+            <input type="text" class="field-text" maxlength="1" value="5" />
+          </div>
+
+          <div>
+            <input type="text" class="field-text" maxlength="1" value="6" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary btn-modal" data-target="#modal003">Salvar Atualização</button>
+    </div>
+  </div>
+
+
+  <div class="modal animated fadeIn" id="modal003">
+    <div class="modal-head">
+
+    </div>
+
+    <div class="modal-content">
+      <div class="modal-info align-center">
+        <span>Sua atualização foi salva com sucessso! Seu protocolo de solicitação é
+          <br />
+          <br />
+          201809122359888123456
+        </span>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">OK</button>
+    </div>
+  </div>
 
   <!-- JAVASCRIPTS -->
   <script>
