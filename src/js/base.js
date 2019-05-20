@@ -42,7 +42,7 @@ var site = {
     MM.InputRange($('.field-slider'));
     MM.CustomSelect();
     MM.Mascarar();
-    MM.Chart();
+    MM.Grafico();
 
     this.menu();
     this.modal();

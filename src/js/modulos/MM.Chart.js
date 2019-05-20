@@ -3,16 +3,16 @@
 * @author: Mateus Moura
 * @Version: 1.0
 */
-Module('MM.Chart', function(Chart){
-  Chart.fn.initialize = function($chart){
-    this.charts = $chart != undefined ? $chart : $('.chart');
+Module('MM.Grafico', function(Grafico){
+  Grafico.fn.initialize = function($chart){
+    this.charts = $chart != undefined ? $chart : $('div.chart-container');
 
     this.loadScripts();
   };
   /**
   * Carregar Scripts necessários para funcionalidade.
   */
-  Chart.fn.loadScripts = function(){
+ Grafico.fn.loadScripts = function(){
     var _this = this;
 
     jQuery.ajaxSetup({
@@ -40,20 +40,16 @@ Module('MM.Chart', function(Chart){
   /**
   * Configuração do plugin para mostrar as máscaras.
   */
-  Chart.fn.config = function(){
+  Grafico.fn.config = function(){
     this.chartsCreated = [];
 
-    for (let i = 0; i < this.charts.length; i++) {
-      const $elem = $(this.charts[i]);
+    this.charts.length && this.charts.each(index => {
+      const $elem = $(this.charts[index]);
       const dados = eval("(" + $elem.data('chart') + ")");
-      const canvas = $elem.find('canvas')[0];
       const chart2 = document.getElementsByTagName('canvas');
-      const chart = new Chart(chart2, dados);
+      const b = new Chart(chart2, dados);
 
-      // console.log(document.getElementsByTagName('canvas'))
-      // console.log(canvas)
-
-      this.chartsCreated.push(chart);
-    }
+      this.chartsCreated.push(b);
+    });
   };
 });
