@@ -137,6 +137,18 @@ img {
   box-shadow: 0 2px 3px rgba(2, 4, 0, 0.3);
 }
 
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
 #overlay {
   background: url("../images/bkg//overlay_white.png");
   display: none;
@@ -1197,6 +1209,19 @@ main .content {
   padding: 12px;
 }
 
+.table tfoot tr, table tfoot tr {
+  background-color: #ffffff;
+  border-bottom: solid 1px #358ed7;
+}
+
+.table tfoot tr td, table tfoot tr td {
+  color: #0062a1;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px;
+}
+
 .table.table-blue thead, table.table-blue thead {
   background-color: #358ed7;
 }
@@ -1214,6 +1239,26 @@ main .content {
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
+}
+
+.table.table-full, table.table-full {
+  width: 100%;
+}
+
+.table.table-full tr, .table.table-full tbody, .table.table-full tfoot, table.table-full tr, table.table-full tbody, table.table-full tfoot {
+  width: 100%;
+}
+
+.table.table-full td, table.table-full td {
+  width: 1%;
+}
+
+.table.table-color tbody tr, table.table-color tbody tr {
+  border-color: #ffc858;
+}
+
+.table.table-color tfoot tr, table.table-color tfoot tr {
+  border-color: #358ed7;
 }
 
 .alert {
@@ -1707,6 +1752,21 @@ main .content {
 
 .cadastro .block-actions {
   padding-top: 20px;
+}
+
+h4 {
+  color: #0062a1;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.actions {
+  border-top: solid 1px #dddddd;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

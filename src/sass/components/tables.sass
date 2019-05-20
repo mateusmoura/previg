@@ -24,6 +24,19 @@
         font-weight: 400;
         padding: 12px
 
+  tfoot
+    tr
+      background-color: #ffffff;
+      border-bottom: solid 1px #358ed7;
+
+      td
+        color: #0062a1;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 12px;
+
+
 
   &.table-blue
     thead
@@ -42,3 +55,21 @@
             font-family: Lato;
             font-size: 14px;
             font-weight: 400;
+
+  &.table-full
+    width: 100%
+
+    tr, tbody, tfoot
+      width: 100%
+
+    td
+      width: 1%
+
+  &.table-color
+    tbody
+      tr
+        border-color: #ffc858
+
+    tfoot
+      tr
+        border-color: #358ed7
