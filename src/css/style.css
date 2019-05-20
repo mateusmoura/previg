@@ -604,6 +604,26 @@ main .content {
   }
 }
 
+main .container-scroll {
+  overflow: scroll;
+  max-height: 60vh;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+main .container-scroll h3 {
+  color: #e38406;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+main .container-scroll p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
 .form-code {
   display: flex;
   align-items: center;
@@ -1279,6 +1299,7 @@ main .content {
     min-width: auto;
     font-size: 18px;
     width: 40px;
+    height: 40px;
     max-width: 40px;
   }
 }
