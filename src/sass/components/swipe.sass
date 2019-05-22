@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.swipe
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+
+.swipe-wrap
+  overflow: hidden;
+  position: relative;
+
+.swipe-wrap > div
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+.swipe-item
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  .swipe-img,.swipe-txt
+    width: 100% 
+    text-align: center
+
+  .swipe-img
+    margin-bottom: 20px
+
+  .swipe-txt
+    h3
+      color: #ffb723;
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 15px
+
+    p
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      max-width: 420px
+      margin: 0 auto
+
+
+.gallery
+  background-color: #0062a1;
+  min-height: 100vh
+  display: flex
+  align-items: center

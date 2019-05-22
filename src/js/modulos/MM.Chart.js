@@ -19,23 +19,21 @@ Module('MM.Grafico', function(Grafico){
       cache: true
     });
 
-    _this.config();
-
-    // if($.mask === undefined){
-    //   $.when(
-    //     // $.getScript(base_url + "js/plugins/moment.min.js"),
-    //     // $.getScript(base_url + "js/plugins/Chart.min.js"),
-    //     $.Deferred(function(deferred){
-    //       $(deferred.resolve)
-    //     })
-    //   ).done(function(){
-    //     _this.config();
-    //   }).fail(function() {
-    //     console.log('Erro getScript')
-    //   });
-    // } else{
+    if(window.Chart === undefined){
+      $.when(
+        $.getScript(base_url + "js/plugins/moment.min.js"),
+        $.getScript(base_url + "js/plugins/Chart.min.js"),
+        $.Deferred(function(deferred){
+          $(deferred.resolve)
+        })
+      ).done(function(){
+        _this.config();
+      }).fail(function() {
+        console.log('Erro getScript')
+      });
+    } else{
       
-    // }
+    }
   };
   /**
   * Configuração do plugin para mostrar as máscaras.

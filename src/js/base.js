@@ -43,6 +43,7 @@ var site = {
     MM.CustomSelect();
     MM.Mascarar();
     MM.Grafico();
+    MM.Gallery();
 
     this.menu();
     this.modal();

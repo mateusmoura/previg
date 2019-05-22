@@ -9,7 +9,8 @@
     "gulp-file-include": "^2.0.1",
     "gulp-include-html": "^1.0.14",
     "gulp-sourcemaps": "^2.6.4",
-    "rangeslider.js": "^2.3.2"
+    "rangeslider.js": "^2.3.2",
+    "swipejs": "^2.2.14"
   },
   "devDependencies": {
     "browser-sync": "^2.18.6",
