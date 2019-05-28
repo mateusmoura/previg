@@ -681,6 +681,7 @@ main .container-scroll p {
     left: auto;
     width: 100%;
     top: 0;
+    height: inherit;
   }
 }
 
@@ -1287,6 +1288,18 @@ main .container-scroll p {
   border-color: #358ed7;
 }
 
+.table.table-white thead tr, .table.table-white thead th, table.table-white thead tr, table.table-white thead th {
+  color: #0062a1;
+  padding: 5px 10px;
+}
+
+.table.table-white tbody tr, .table.table-white tbody td, table.table-white tbody tr, table.table-white tbody td {
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .alert {
   border-radius: 4px;
   display: flex;
@@ -1407,6 +1420,15 @@ main .container-scroll p {
   text-transform: uppercase;
 }
 
+.btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-big {
+  padding: 20px 50px;
+}
+
 .h1, .h2, .h3, .h4, .h5 {
   font-family: Lato;
   font-weight: 400;
@@ -1460,6 +1482,10 @@ main .container-scroll p {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.form-full {
+  width: 100%;
 }
 
 .form-group {
@@ -1734,6 +1760,45 @@ main .container-scroll p {
   color: #ffffff;
 }
 
+.field-textarea {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  min-height: 150px;
+  width: 100%;
+  padding: 20px 12px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field-textarea::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field-textarea::-moz-placeholder {
+  color: #9b9b9b;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field-textarea:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field-textarea:-moz-placeholder {
+  color: #9b9b9b;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -1789,6 +1854,18 @@ main .container-scroll p {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.text p, .text li {
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.list-none {
+  list-style: none;
 }
 
 .emprestimos .alert {
@@ -1999,6 +2076,10 @@ h4 {
   font-family: Lato;
   font-size: 16px;
   font-weight: 400;
+}
+
+.alterar-senha .text {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

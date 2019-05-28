@@ -1,3 +1,7 @@
+
+.form-full
+  width: 100%
+
 .form-group
   margin-bottom: 15px 
 
@@ -208,3 +212,25 @@
             span
               background-color: #0062a1;
               color: #ffffff;
+
+.field-textarea
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3
+  min-height: 150px
+  width: 100%
+  padding: 20px 12px
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  
+  &::-webkit-input-placeholder,
+    @include placeholder
+
+  &::-moz-placeholder
+    @include placeholder
+
+  &:-ms-input-placeholder
+    @include placeholder
+
+  &:-moz-placeholder
+    @include placeholder
