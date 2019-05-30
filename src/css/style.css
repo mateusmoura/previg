@@ -624,6 +624,12 @@ main .container-scroll p {
   margin-bottom: 15px;
 }
 
+main .content-white {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 100%;
+}
+
 .form-code {
   display: flex;
   align-items: center;
@@ -1300,6 +1306,44 @@ main .container-scroll p {
   font-weight: 400;
 }
 
+.table.table-clean thead tr, .table.table-clean thead th, table.table-clean thead tr, table.table-clean thead th {
+  color: #404040;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.table.table-clean tbody tr, .table.table-clean tbody td, table.table-clean tbody tr, table.table-clean tbody td {
+  color: #404040;
+  font-family: Lato;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.table.table-clean tbody tr, table.table-clean tbody tr {
+  border-bottom: 0;
+}
+
+.table.table-clean tfoot, table.table-clean tfoot {
+  background-color: #f2f2f2;
+}
+
+.table.table-clean tfoot tr, .table.table-clean tfoot td, table.table-clean tfoot tr, table.table-clean tfoot td {
+  color: #404040;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.table.table-clean tfoot tr, table.table-clean tfoot tr {
+  background-color: #f2f2f2;
+  border-bottom: 0;
+  border-top: solid 1px #979797;
+}
+
 .alert {
   border-radius: 4px;
   display: flex;
@@ -1799,6 +1843,21 @@ main .container-scroll p {
   font-weight: 400;
 }
 
+.field-info label {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field-info p {
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -2080,6 +2139,36 @@ h4 {
 
 .alterar-senha .text {
   margin-bottom: 50px;
+}
+
+.extracts .extract-info {
+  border-bottom: solid 1px #cbcbcb;
+  margin-bottom: 20px;
+}
+
+.extracts .extract-info .row {
+  margin-bottom: 25px;
+}
+
+.extracts .extract-data {
+  margin-bottom: 35px;
+}
+
+.extracts .extract-data h3 {
+  color: #404040;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.extracts .remark h4 {
+  margin-bottom: 5px;
+}
+
+.extracts .btn-primary {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
