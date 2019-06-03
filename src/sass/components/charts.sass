@@ -1,0 +1,25 @@
+.chart-container
+  position: relative
+  padding-bottom: 20px
+
+  &__summary
+    position: absolute
+    top: 50%
+    left: 50%
+    max-width: 180px
+    text-align: center
+    @include transform(translate(-50%, -50%))
+
+    h4
+      color: #3c4144;
+      font-family: Lato;
+      font-size: 40px;
+      font-weight: 400;
+      margin: 0
+
+    span
+      color: #9facb3;
+      font-family: Lato;
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: uppercase;

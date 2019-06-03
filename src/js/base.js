@@ -41,9 +41,9 @@ var site = {
   global: function(){
     MM.InputRange($('.field-slider'));
     MM.CustomSelect();
-    MM.Mascarar();
-    MM.Grafico();
-    MM.Gallery();
+    MM.Mascarar && MM.Mascarar();
+    MM.Grafico && MM.Grafico();
+    MM.Gallery && MM.Gallery();
 
     this.menu();
     this.modal();
