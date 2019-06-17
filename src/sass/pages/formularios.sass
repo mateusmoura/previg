@@ -1,10 +1,18 @@
 .forms
+  .content-white
+    padding: 0
+    margin-bottom: 10px
+
   .form
     &-list
       
     &-item
       display: flex
       align-items: center
+      border-bottom: solid 1px #f1f3f5
+
+      &:last-child
+        border-bottom: none
 
     &-number
       flex-grow: 1
@@ -12,6 +20,7 @@
       font-family: Roboto;
       font-size: 14px;
       font-weight: 400;
+      padding: 0 15px
 
     &-name
       flex-grow: 2
