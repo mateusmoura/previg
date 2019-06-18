@@ -153,6 +153,14 @@ img {
   border-bottom: solid 1px #dfdfdf;
 }
 
+.border-top-orange {
+  border-top: solid 1px #ffb723;
+}
+
+.border-top-orange-6 {
+  border-top: solid 6px #ffb723;
+}
+
 #overlay {
   background: url("../images/bkg//overlay_white.png");
   display: none;
@@ -1510,6 +1518,26 @@ main .content-white {
   background-image: linear-gradient(135deg, #3f7d8f 0%, #3f7d8f 100%);
 }
 
+.btn-tooltip {
+  /* Style for "Oval" */
+  width: 20px;
+  height: 20px;
+  background-color: #358ed7;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  line-height: 16px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  min-width: 20px;
+  min-height: 20px;
+  margin-left: 10px;
+}
+
 .h1, .h2, .h3, .h4, .h5 {
   font-family: Lato;
   font-weight: 400;
@@ -2063,6 +2091,42 @@ main .content-white {
   color: #ffffff;
 }
 
+.tooltip {
+  border-radius: 8px;
+  background-color: #358ed7;
+  position: absolute;
+  padding: 15px;
+  z-index: 999;
+  top: 100%;
+  margin-top: 10px;
+  align-self: center;
+  min-width: 300px;
+}
+
+.tooltip p {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: normal;
+}
+
+.tooltip .icon {
+  border-style: solid;
+  border-width: 6px;
+  border-color: #358ed7;
+  border-width: 6px 6px 6px;
+  border-color: #358ed7 transparent transparent transparent;
+  background-color: transparent;
+  bottom: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  -moz-transform: translateX(-50%) rotate(180deg);
+  -ms-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+}
+
 .emprestimos .alert {
   margin-bottom: 18px;
   margin-top: 15px;
@@ -2422,6 +2486,51 @@ h4 {
   color: #3a4550;
   font-family: Roboto;
   font-size: 14px;
+  font-weight: 400;
+}
+
+.simulators h3 {
+  color: #e38406;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.simulators h4 {
+  color: #3a4550;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.simulators .content-white {
+  margin-bottom: 20px;
+}
+
+.simulators .form-group label {
+  min-height: 38px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.simulators .block-gray {
+  border-radius: 4px;
+  background-color: #ececec;
+  padding: 12px;
+}
+
+.simulators .block-gray p {
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  color: #0062a1;
+}
+
+.simulators .block-gray p strong {
+  color: #3a4550;
   font-weight: 400;
 }
 

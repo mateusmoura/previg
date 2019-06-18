@@ -44,6 +44,7 @@ var site = {
     MM.Mascarar && MM.Mascarar();
     MM.Grafico && MM.Grafico();
     MM.Gallery && MM.Gallery();
+    MM.Tooltip && MM.Tooltip();
 
     this.menu();
     this.modal();
