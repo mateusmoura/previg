@@ -161,6 +161,30 @@ img {
   border-top: solid 6px #ffb723;
 }
 
+.separate-title {
+  padding: 20px 0;
+  border-top: solid 1px #979797;
+  border-bottom: solid 1px #979797;
+}
+
+.separate-title h5 {
+  color: #404040;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.caption {
+  padding: 20px 0;
+}
+
+.caption p {
+  color: #404040;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 #overlay {
   background: url("../images/bkg//overlay_white.png");
   display: none;
@@ -268,6 +292,10 @@ header .block-user__data p, .header .block-user__data p {
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 0 1%;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   padding: 0 1%;
 }
 
@@ -908,6 +936,10 @@ main .content-white {
   padding: 0 1%;
 }
 
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  padding: 0 1%;
+}
+
 .col-1 {
   width: 8.3%;
 }
@@ -1378,6 +1410,42 @@ main .content-white {
   background-color: #f2f2f2;
   border-bottom: 0;
   border-top: solid 1px #979797;
+}
+
+.table .tbody-gray, table .tbody-gray {
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-left: none;
+  border-right: none;
+}
+
+.table .tbody-gray tr, .table .tbody-gray td, table .tbody-gray tr, table .tbody-gray td {
+  background-color: #fafafa;
+  color: #404040;
+}
+
+.table .tbody-gray tr, table .tbody-gray tr {
+  border: none;
+}
+
+.table .tbody-gray td, table .tbody-gray td {
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  border-top: none;
+  border-right: 0;
+}
+
+.table .tfoot-gray, table .tfoot-gray {
+  background-color: #e2e2e2;
+}
+
+.table .tfoot-gray tr, .table .tfoot-gray td, table .tfoot-gray tr, table .tfoot-gray td {
+  background-color: #e2e2e2;
+  color: #404040;
+}
+
+.table .tfoot-gray tr, table .tfoot-gray tr {
+  border: none;
 }
 
 .alert {
@@ -2532,6 +2600,14 @@ h4 {
 .simulators .block-gray p strong {
   color: #3a4550;
   font-weight: 400;
+}
+
+.simulators .field-info {
+  margin-bottom: 25px;
+}
+
+.simulators .separate-title {
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
