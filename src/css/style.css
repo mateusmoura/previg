@@ -185,6 +185,18 @@ img {
   font-weight: 700;
 }
 
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.bg-gray {
+  background-color: #ececec;
+}
+
 #overlay {
   background: url("../images/bkg//overlay_white.png");
   display: none;
@@ -1448,6 +1460,35 @@ main .content-white {
   border: none;
 }
 
+.grid-table .form-group {
+  margin-bottom: 0;
+}
+
+.grid-table .form-group label {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-table .form-group label {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.grid-table .form-group p {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .grid-table .form-group p {
+    font-size: 18px;
+  }
+}
+
+.grid-table .row {
+  padding: 10px 5px;
+}
+
 .alert {
   border-radius: 4px;
   display: flex;
@@ -1702,6 +1743,12 @@ main .content-white {
   .form-group p {
     font-size: 24px;
   }
+}
+
+.form-group.label-flex label {
+  min-height: 38px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .field-text {
@@ -2560,28 +2607,34 @@ h4 {
 .simulators h3 {
   color: #e38406;
   font-family: Lato;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .simulators h3 {
+    font-size: 24px;
+  }
+}
+
 .simulators h4 {
   color: #3a4550;
   font-family: Lato;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
-.simulators .content-white {
-  margin-bottom: 20px;
+@media (min-width: 768px) {
+  .simulators h4 {
+    font-size: 24px;
+  }
 }
 
-.simulators .form-group label {
-  min-height: 38px;
-  display: flex;
-  align-items: flex-end;
+.simulators .content-white {
+  margin-bottom: 20px;
 }
 
 .simulators .block-gray {
